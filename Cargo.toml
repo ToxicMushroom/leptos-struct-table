@@ -8,7 +8,7 @@ license = "MIT OR Apache-2.0"
 name = "leptos-struct-table"
 readme = "README.md"
 repository = "https://github.com/Synphonyte/leptos-struct-table"
-version = "0.19.1"
+version = "0.20.0"
 
 [package.metadata."docs.rs"]
 all-features = true
@@ -16,14 +16,17 @@ all-features = true
 [dependencies]
 chrono = { version = "0.4", optional = true }
 jiff = { version = "0.2", optional = true }
-leptos = { version = "0.8" }
-leptos-struct-table-macro = { version = "0.15.1" }
-leptos-use = { version = "0.19", default-features = false, features = [
+leptos = { version = "0.9.0-rc1" }
+leptos-struct-table-macro = { version = "0.15.2" }
+leptos-use = { git = "https://github.com/Synphonyte/leptos-use.git", branch = "leptos-0.9", default-features = false, features = [
     "element",
     "use_debounce_fn",
     "use_element_size",
     "use_scroll",
 ] }
+leptos-use-element-size = { git = "https://github.com/Synphonyte/leptos-use.git", branch = "leptos-0.9" }
+leptos-use-fn-debounce-throttle= { git = "https://github.com/Synphonyte/leptos-use.git", branch = "leptos-0.9" }
+leptos-use-scroll= { git = "https://github.com/Synphonyte/leptos-use.git", branch = "leptos-0.9" }
 rust_decimal = { version = "1", optional = true }
 serde = "1"
 time = { version = "0.3", optional = true, features = ["formatting"] }
