@@ -7,7 +7,7 @@ version = "0.1.0"
 chrono = { version = "0.4", features = [] }
 console_error_panic_hook = "0.1"
 console_log = "1"
-leptos = { version = "0.8", features = ["csr"] }
+leptos = { version = "0.9.0-beta2", features = ["csr"] }
 leptos-struct-table = { path = "../..", features = ["chrono", "time", "uuid"] }
 log = "0.4"
 time = { version = "0.3" }
